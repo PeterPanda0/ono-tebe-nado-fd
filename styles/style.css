@@ -7,7 +7,7 @@ section {
   grid-template-columns: 1fr min-content 1fr;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px 96px;
+  padding: 92px 50px 96px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -128,9 +128,9 @@ section {
 
 .cover__description {
   position: absolute;
+  right: 50px;
   bottom: -160px;
   left: 50px;
-  right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,6 +325,7 @@ section {
   gap: 20px;
   height: 180px;
   margin-top: 85px;
+  margin-bottom: 35px;
   padding: 37px 50px;
   color: #000000;
   font-weight: 400;
