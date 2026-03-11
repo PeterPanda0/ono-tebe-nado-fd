@@ -22,6 +22,7 @@ section {
   list-style-type: none;
 }
 
+.contacts__link,
 .header__link {
   color: #000;
   font-weight: 400;
@@ -29,9 +30,9 @@ section {
   text-transform: lowercase;
 }
 
+.contacts__link,
 .header__link,
-.footer__link,
-.footer__menu-link .header__link {
+.footer__menu-link {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -53,17 +54,23 @@ section {
   height: 105px;
 }
 
-.header__address {
-  justify-self: end;
-}
-
-.address {
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: normal;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header .contacts {
+  justify-self: flex-end;
   gap: 5px;
   padding-right: 37px;
-  font-style: normal;
 }
 
 .cover {
@@ -86,8 +93,10 @@ section {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
-  padding-top: 105px;
+  margin-top: 105px;
 }
 
 .cover__title {
@@ -127,13 +136,13 @@ section {
 }
 
 .cover__description {
-  position: absolute;
-  right: 50px;
-  bottom: -160px;
-  left: 50px;
   display: flex;
+  justify-self: start;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-top: 105px;
+  padding: 0 50px;
 }
 
 .cover__description-text {
@@ -166,8 +175,7 @@ section {
   justify-content: flex-end;
   align-items: flex-start;
   box-sizing: border-box;
-  min-height: 723px;
-  margin-top: 182px;
+  margin-top: 176px;
   padding: 0;
 }
 
@@ -194,7 +202,7 @@ section {
 
 .lots__card-list-item {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 .card-link {
@@ -323,25 +331,17 @@ section {
   align-items: start;
   align-content: start;
   gap: 20px;
-  height: 180px;
   margin-top: 85px;
-  margin-bottom: 35px;
+  margin-bottom: 48px;
   padding: 37px 50px;
   color: #000000;
   font-weight: 400;
   font-size: 18px;
 }
 
-.footer__address {
+.footer .contacts {
   justify-self: start;
-}
-
-.footer__link {
-  display: block;
-  color: #000;
-  line-height: 100%;
-  text-decoration: none;
-  text-transform: lowercase;
+  gap: 6px;
 }
 
 .footer__menu-list {
